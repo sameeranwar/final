@@ -4,9 +4,9 @@ Final::Application.routes.draw do
   # Specify a custom home page
   get "/" => "ice#index"
 
- get "/about" => 'about#show'
+ get "/about" => "about/about"
 
- get "/ice/:id" => 'ice#show'
+ get "/ice/:id" => "ice#show"
 
 
   # Sign-In and Sign-Out
