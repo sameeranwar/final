@@ -1,20 +1,17 @@
 # Example table for a typical Book model.
 #
+Feeling: 
+  - expression: string
+  - emoticon: string
 
-Feelings: 
-	- expression: string
-	- emoticon: string
-
-Time:
-	- length: integer
-	- video: string
+Timer:
+  - length: integer
+  - video: string
 
 Connector:
-	- expression: string
-	- length: integer
-	- music: string
-
-	
+  - expression_id: string
+  - length_id: integer
+  - music: string
 
 
 # Book:
