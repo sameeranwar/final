@@ -1,1 +1,28 @@
-show.html.erb
+<% feeling_id = params["id"] %>
+<% feeling = Feeling.read(feeling_id) %>
+
+
+<div class="row">
+
+  <div class="col-md-4">
+    <%= image_tag(feeling["emoticon"]) %>
+  </div>
+
+
+
+   <% Timer.read.order("length").each do |timer| %>
+
+      <div class="row timer">
+		<div height="250px" width="250px"> 
+		</div>
+        
+        <div class="col-md-4">
+          <%= link_to image_tag(timer["video"]), "/timer/#{timer["id"]}" %>
+        </div>
+
+        <div class="col-md-8">
+
+      </div>
+    <% end %>
+  </div>
+
