@@ -4,7 +4,10 @@
 <h1>
 <center><i>
 <font face="adobe garamond" color="black">
+
+<div style ="padding-left :100px; padding-top :200px">
 how long do you want to melt for?
+</div>
 </i></font>
 </center>
 </font>
@@ -18,7 +21,7 @@ how long do you want to melt for?
 
    <% Timer.read.order("length").each do |timer| %>
 
-        <div class="col-md-3">
+        <div class="col-md-3" style ="padding-left :100px; padding-top :90px">
           <%= link_to image_tag(timer["video"]), "/ice/output/#{timer["id"]}" %>
         </div>
 

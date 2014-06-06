@@ -12,6 +12,6 @@ lengthy = Timer.create("length" => "180", "video" => "http://37.media.tumblr.com
 
 Connector.delete_all
 Connector.create("expression_id" => rh.id, "timer_id" => short.id, "music"=> "//www.youtube.com/embed/8M9mFPk_Uhg?autoplay=1")
-Connector.create("expression_id" => rh.id, "timer_id" => medium.id, "music"=> "//www.youtube.com/embed/Roey45jgzvw")
-Connector.create("expression_id" => rh.id, "timer_id" => long.id, "music"=> "//www.youtube.com/embed/IUXZTrON5p0")
-Connector.create("expression_id" => rh.id, "timer_id" => lengthy.id, "music"=> "//www.youtube.com/embed/fSzxh0HYkRI")
+Connector.create("expression_id" => rh.id, "timer_id" => medium.id, "music"=> "//www.youtube.com/embed/Roey45jgzvw?autoplay=1")
+Connector.create("expression_id" => rh.id, "timer_id" => long.id, "music"=> "//www.youtube.com/embed/IUXZTrON5p0?autoplay=1")
+Connector.create("expression_id" => rh.id, "timer_id" => lengthy.id, "music"=> "//www.youtube.com/embed/fSzxh0HYkRI?autoplay=1")

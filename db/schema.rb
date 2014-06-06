@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140606160547) do
+ActiveRecord::Schema.define(version: 20140606161948) do
 
   create_table "connectors", force: true do |t|
     t.string  "expression_id"

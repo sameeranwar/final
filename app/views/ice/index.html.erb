@@ -3,18 +3,22 @@
 <h1>
 <center><i>
 <font face="adobe garamond" color="black">
+
+<div style ="padding-left :100px; padding-top :200px">
 how are you feeling?
+</div>
 </i></font>
 </center>
 </font>
 </h1>
 
+<p>
 
       <div class="row feeling">
 
 	    <% Feeling.read.order("expression").each do |feeling| %>
 
-	        <div class="col-md-3">
+	        <div class="col-md-3" style ="padding-left :100px; padding-top :50px">
 	          <%= link_to image_tag(feeling["emoticon"]), "/ice/#{feeling["id"]}" %>
 	        </div>
 
@@ -22,11 +26,14 @@ how are you feeling?
         
       </div>
 
+</p>
 
 
+<footer>
 <p>
-
 
 <A HREF="http://www.computerhope.com/"><IMG SRC="http://www.computerhope.com/logo.gif" alt="Logo"></a>
+</p>
 
-<p>
+</footer>
+
