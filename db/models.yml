@@ -10,7 +10,7 @@ Timer:
 
 Connector:
   - expression_id: string
-  - length_id: integer
+  - timer_id: integer
   - music: string
 
 

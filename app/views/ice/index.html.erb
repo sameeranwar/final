@@ -1,58 +1,30 @@
 
 
-<font size="150">
-<center>
-<font face="verdana" color="green">
-How are you feeling?
-</font>
+<h1>
+<center><i>
+<font face="adobe garamond" color="black">
+how are you feeling?
+</i></font>
 </center>
 </font>
+</h1>
 
-
-
-    <% Feeling.read.order("expression").each do |feeling| %>
 
       <div class="row feeling">
-		<div height="250px" width="250px"> 
-		</div>
+
+	    <% Feeling.read.order("expression").each do |feeling| %>
+
+	        <div class="col-md-3">
+	          <%= link_to image_tag(feeling["emoticon"]), "/ice/#{feeling["id"]}" %>
+	        </div>
+
+	    <% end %>
         
-        <div class="col-md-4">
-          <%= link_to image_tag(feeling["emoticon"]), "/feeling/#{feeling["id"]}" %>
-        </div>
-
-        <div class="col-md-8">
-
       </div>
-    <% end %>
-  </div>
 
 
 
 <p>
-
-
-
-<div style="align: left; text-align:center;">
-    <A HREF="http://localhost:3000/users/new"> <img src="http://1.bp.blogspot.com/_0ye-caO3n5A/TJMXF0Ukg_I/AAAAAAAAAPw/29mTKPDjGXA/s1600/iStock_000009025558XSmall.jpg" height="250px" width="250px" />
-    <div class="caption"><font size="150">Tired</font></div>
-</div>
-
-
-<div style="align: left; text-align:center;">
-    <A HREF="http://localhost:3000/users/new"> <img src="http://www.wholepregnancy.org/images/articles/338520efc320130123134949_iStock_000019571829XSmall.jpg" height="250px" width="250px" />
-    <div class="caption"><font size="150">Sad</font></div>
-</div>
-
-<div style="align: left; text-align:center;">
-    <A HREF="http://localhost:3000/users/new"> <img src="http://voice-wilderness.org/wp-content/uploads/2011/10/shutterstock_baby-crying99322658.jpg" height="250px" width="250px" />
-    <div class="caption"><font size="150">Anxious</font></div>
-</div>
-
-
-<div style="align: left; text-align:center;">
-    <A HREF="http://localhost:3000/users/new"> <img src="http://dojodigest.com/wp-content/uploads/2013/06/CryBabyWithSadFace.jpg" height="250px" width="250px" />
-    <div class="caption"><font size="150">Depressed</font></div>
-</div>
 
 
 <A HREF="http://www.computerhope.com/"><IMG SRC="http://www.computerhope.com/logo.gif" alt="Logo"></a>

@@ -8,6 +8,7 @@ Final::Application.routes.draw do
 
  get "/ice/:id" => "ice#show"
 
+ get "/ice/output/:id" => "ice#output"
 
   # Sign-In and Sign-Out
   get "/logout" => 'sessions#logout'

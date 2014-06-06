@@ -1,0 +1,14 @@
+<% output = Timer.find_by("id" => params["id"]) %>
+
+
+
+ <% zebra = Connector.find_by("timer_id" => output["id"]) %>
+
+<iframe width="1000" height="800" src="<%= zebra["music"] %>" frameborder="0" allowfullscreen></iframe>
+
+   <div class="row">
+  <div class="col-md-4">
+    <h2><%= zebra["length_id"] %></h2>
+
+  </div>
+

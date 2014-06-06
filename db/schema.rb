@@ -11,12 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140605175949) do
+ActiveRecord::Schema.define(version: 20140606160547) do
 
   create_table "connectors", force: true do |t|
     t.string  "expression_id"
-    t.integer "length_id"
     t.string  "music"
+    t.integer "timer_id"
   end
 
   create_table "feelings", force: true do |t|
