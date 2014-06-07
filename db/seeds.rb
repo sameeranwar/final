@@ -15,3 +15,7 @@ Connector.create("expression_id" => rh.id, "timer_id" => short.id, "music"=> "//
 Connector.create("expression_id" => rh.id, "timer_id" => medium.id, "music"=> "//www.youtube.com/embed/Roey45jgzvw?autoplay=1")
 Connector.create("expression_id" => rh.id, "timer_id" => long.id, "music"=> "//www.youtube.com/embed/IUXZTrON5p0?autoplay=1")
 Connector.create("expression_id" => rh.id, "timer_id" => lengthy.id, "music"=> "//www.youtube.com/embed/fSzxh0HYkRI?autoplay=1")
+
+User.delete_all
+jeff = User.create("username" => "jeff", "password" => "hockey", "name" => "Jeff Cohen")
+brian = User.create("username" => "brian", "password" => "homework", "name" => "Brian Eng")

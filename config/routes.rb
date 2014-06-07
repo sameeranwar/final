@@ -10,7 +10,9 @@ Final::Application.routes.draw do
 
  get "/ice/output/:id" => "ice#output"
 
+
   # Sign-In and Sign-Out
+
   get "/logout" => 'sessions#logout'
   get "/login" => 'sessions#login'
   post "/authenticate" => 'sessions#authenticate'
@@ -32,6 +34,7 @@ Final::Application.routes.draw do
 
   # --- Delete
   delete "/users/:id" => 'users#destroy'
+
 
 
 

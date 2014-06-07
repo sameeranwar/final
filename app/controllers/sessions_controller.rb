@@ -2,7 +2,7 @@ class SessionsController < ApplicationController
 
   def logout
     cookies["user_id"] = nil
-    redirect_to "/", :notice => "See ya!"
+    redirect_to "/", :notice => "To mindfulness and beyond!"
   end
 
   def authenticate
@@ -10,9 +10,9 @@ class SessionsController < ApplicationController
     if the_user != nil
       if the_user["password"] == params["password"]
         cookies["user_id"] = the_user["id"]
-        redirect_to "/", :notice => "Wazzzup"
+        redirect_to "/", :notice => "Welcome to your newly found peace"
       else
-        logger.debug "Wazzzzup!"
+        logger.debug "Welcome to your newly found peace!"
         redirect_to "/login", :notice => "Unknown password."
       end
     else

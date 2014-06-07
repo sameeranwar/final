@@ -13,6 +13,11 @@ Connector:
   - timer_id: integer
   - music: string
 
+User:
+  - username: string
+  - password: string
+  - name: string
+
 
 # Book:
 #   - title: string

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140606161948) do
+ActiveRecord::Schema.define(version: 20140607152931) do
 
   create_table "connectors", force: true do |t|
     t.string  "expression_id"
@@ -27,6 +27,12 @@ ActiveRecord::Schema.define(version: 20140606161948) do
   create_table "timers", force: true do |t|
     t.integer "length"
     t.string  "video"
+  end
+
+  create_table "users", force: true do |t|
+    t.string "username"
+    t.string "password"
+    t.string "name"
   end
 
 end
