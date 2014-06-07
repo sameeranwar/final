@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.4'
-
+gem 'ez'
 
 
 
@@ -46,7 +46,8 @@ end
 
 gem "quiet_assets", group: "development"
 gem "hirb", group: "development"
-gem "ez", group: "development"
+#gem "ez", group: "development"
+
 group :development, :test do
   gem "sqlite3"
 end
