@@ -10,11 +10,42 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
 </head>
 <body>
+<div class="container">
+      <div class="header">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Mindfulness</h1>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-8">
+            <%= link_to "Mindfulness", "/", "class" => "item-link"  %> |
+            <%= link_to "Length", "/ice/:id" %> |
+            <%= link_to "About", "/about" %>
+          </div>
+          <div class="pull-right">
+              <%= link_to "Sign Out", '/logout' %>
+              <%= link_to "Sign Up", '/users/new' %> |
+              <%= link_to "Sign In", '/login' %>
+            </div>
+        </div>
+        <hr>
+        <h4 class="text-warning"><%= notice %></h4>
+      
 
 <%= yield %>
- 
+ </div>
+
+<center> Copyright 2014 </center>
 </body>
 </html>
  
